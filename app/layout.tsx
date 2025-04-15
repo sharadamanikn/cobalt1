@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description:
       "Explore the fascinating world of cobalt. From its role in clean energy to cutting-edge technology, Cobalt is your guide to this powerful metal.",
     images: {
-      url: "/og-card.png",
+      url: "cobalt1-delta.vercel.app",
       width: 1200,
       height: 628,
     },
@@ -36,13 +36,11 @@ export const metadata: Metadata = {
 
 
 const RootLayout = (props: PropsWithChildren  ) => { 
-  return (
-    <html>
+  return <html>
       <body>
         {props.children}
       </body>
     </html>
-  )
  };
 
 
