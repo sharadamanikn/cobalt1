@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
 import { Metadata } from "next";
+import NavigationBar from "@/components/navigation-bar/navigation-bar";
 
 export const metadata: Metadata = {
   title: "Cobalt — Everything About The Essential Metal",
@@ -21,8 +22,11 @@ export const metadata: Metadata = {
 const RootLayout = (props: PropsWithChildren  ) => { 
   return <html>
       <body>
+        <div className="flex flex-col items-stretch">
+        <NavigationBar />
         {props.children}
+        </div>
       </body>
     </html>
- };
+ }
 export default RootLayout;
