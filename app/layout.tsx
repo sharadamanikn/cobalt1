@@ -1,6 +1,8 @@
-import { PropsWithChildren } from "react";
-import { Metadata } from "next";
+import "./globals.css";
+
 import NavigationBar from "@/components/navigation-bar/navigation-bar";
+import { Metadata } from "next";
+import { PropsWithChildren } from "react";
 
 export const metadata: Metadata = {
   title: "Cobalt — Everything About The Essential Metal",
@@ -11,22 +13,24 @@ export const metadata: Metadata = {
     description:
       "Explore the fascinating world of cobalt. From its role in clean energy to cutting-edge technology, Cobalt is your guide to this powerful metal.",
     images: {
-      url: "cobalt1-delta.vercel.app/og-card.png",
+      url: "https://cobalt-plum.vercel.app/og-card.png",
       width: 1200,
       height: 628,
     },
   },
 };
 
-
-const RootLayout = (props: PropsWithChildren  ) => { 
-  return <html>
+const RootLayout = (props: PropsWithChildren) => {
+  return (
+    <html>
       <body>
         <div className="flex flex-col items-stretch">
-        <NavigationBar />
-        {props.children}
+          <NavigationBar />
+          {props.children}
         </div>
       </body>
     </html>
- }
+  );
+};
+
 export default RootLayout;
