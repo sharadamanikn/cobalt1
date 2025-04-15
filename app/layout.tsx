@@ -1,23 +1,6 @@
 import { PropsWithChildren } from "react";
 import { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title:"Cobalt",
-//   openGraph:{
-//     title:"Cobalt is an example project",
-//     description:"An example project using Next.js",
-// images:{
-//   url:"/image.png",
-//    width:1200,
-//     height:628, 
-// },
-
-//   }
-// };
-
-
-
-
 export const metadata: Metadata = {
   title: "Cobalt — Everything About The Essential Metal",
   description:
@@ -42,6 +25,4 @@ const RootLayout = (props: PropsWithChildren  ) => {
       </body>
     </html>
  };
-
-
 export default RootLayout;
